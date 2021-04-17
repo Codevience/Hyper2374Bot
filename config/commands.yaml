@@ -1,4 +1,11 @@
 single:
+  - GUID : a035e401-843c-4007-86d3-a97354e92296
+    name : "about"
+    alias:
+      - 關於
+    sleep: 20
+    text : 我是小烈專屬機器人(灬ºωº灬)，你可以在GitHub上找到我（https://github.com/Codevience/Hyper2374Bot，開發者是傑森哥（@jason40418）Kappa
+    level: general
   - GUID : 31cb0ae1-1e4d-4ff0-8244-b9f0cf92b002
     name : "facebook"
     alias:
