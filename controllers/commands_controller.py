@@ -26,6 +26,7 @@
 
 @Reference
 """
+from commands.timer_command import TimerCommand
 from commands.single_command import SingleCommand
 from utils.config import Config
 
@@ -34,9 +35,10 @@ class CommandsController(object):
         self.__config = Config("commands.yaml")
         self.__status, self.__config_data = self.__config.get()
         self.__single_command_list = self.__get_single_command()
+        self.__timer_command_list = self.__get_timer_command()
 
     def get(self):
-        return self.__single_command_list
+        return self.__single_command_list, self.__timer_command_list
 
     def __get_single_command(self):
         result = list()
@@ -45,6 +47,17 @@ class CommandsController(object):
             result.append(SingleCommand(
                 cmd['GUID'], cmd['name'], cmd['alias'], cmd['sleep'],
                 cmd['text'], cmd['level']
+            ))
+
+        return result
+
+    def __get_timer_command(self):
+        result = list()
+
+        for cmd in self.__config_data['timer']:
+            result.append(TimerCommand(
+                cmd['GUID'], cmd['name'], cmd['alias'], cmd['time'],
+                cmd['text'], cmd['lines']
             ))
 
         return result

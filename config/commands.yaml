@@ -23,3 +23,12 @@ single:
     sleep: 20
     text : 小烈醬諧星日記： https://goo.gl/yz2WQK ，內含教學影片、小技巧、實況精華，請多多支持。
     level: general
+timer:
+  - GUID : b179dc29-9903-4e12-8729-db0b0466ded4
+    name : "promote"
+    alias:
+      - commercial
+      - 工商宣傳
+    time : 1200
+    text : "POWZAN官網: https://www.powzan.com/?utm_source=twitch&utm_medium=Live&utm_campaign=hyper2374 CR-GC603: https://www.powzan.com/web/product/product_in.jsp?pd_no=PD1595582459088&utm_source=twitch&utm_medium=Live&utm_campaign=hyper2374"
+    lines : 5
